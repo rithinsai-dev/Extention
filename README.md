@@ -31,7 +31,7 @@ A Chrome extension that automatically enables Picture-in-Picture (PiP) mode when
 1. **Download the extension files** from the repository.
 2. **Extract the folder** to a preferred location on your computer.
 3. **Go to Chrome Extensions page** (`chrome://extensions/`).
-![Step 1]([reference/Screenshot%202025-03-09%20195311.png])  
+![Step 1]([reference/Screenshot 2025-03-09 195311.png])  
 4. **Enable Developer Mode** (toggle on the top right).
 ![Step 2](reference/Screenshot%202025-03-09%20195325.png) 
 5. Click **Load unpacked** and select the extracted folder.
