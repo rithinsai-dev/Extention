@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube PiP Mode",
+    "version": "1.1",
+    "description": "Automatically enables Picture-in-Picture mode when switching tabs while watching a YouTube video.",
+    "permissions": ["tabs", "activeTab", "scripting"],
+    "host_permissions": ["*://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/1680531652914.jpg",
+        "48": "icons/1680531652914.jpg",
+        "128": "icons/1680531652914.jpg"
+      },
+      "default_title": "Enable YouTube PiP"
+    },
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Alt+P"
+        },
+        "description": "Toggle Picture-in-Picture mode"
+      }
+    }
+  }
+  
